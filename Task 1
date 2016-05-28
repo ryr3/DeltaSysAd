@@ -2,11 +2,11 @@
 mkdir Task1
 cd Task1
 for x in {1..100};do
-	touch ./file$x
+	touch file$x
 	cat /dev/urandom | tr -cd [:alnum:]| head -c 16 > file$x
-	fallocate -l 10K file$x
-	touch -d "2 days ago" file$x
-	chmod 444 file$x
-	sudo chattr +i file$x
-done
+	done
+fallocate -l 10K file*
+touch -d "2 days ago" file*
+chmod 444 file*
+sudo chattr +i file*
 cd ..
