@@ -5,7 +5,7 @@ for x in {1..100};do
 	touch file$x
 	cat /dev/urandom | tr -cd [:alnum:]| head -c 16 > file$x
 	done
-truncate -s 10K file*
+truncate -s 10000 file*
 touch -d "2 days ago" file*
 chmod 444 file*
 sudo chattr +i file*

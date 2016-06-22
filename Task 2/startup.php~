@@ -1,0 +1,6 @@
+<?php
+	include 'config.php';
+	$hashed=md5('password');
+	$sql="INSERT into TABLE users values('admin','$hashed','lolol')";
+	mysqli_query($db,$sql);
+?>

