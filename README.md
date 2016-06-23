@@ -8,11 +8,11 @@ Task 2
 ------
 Copy required(*) files to /var/www. Copy hosts to /etc/ using sudo. 
 
- * apache2.conf*<br>
+ * apache2.conf *<br>
    Apache configuration file  <br>
-* config.php<br>
+* config.php * <br>
 	Config file for connecting to database<br>
-* cron<br>
+* cron * <br>
 	crontab to execute as per requirement<br>
 * hacka.php<br>
 	An attempt to brute-force using PHP cURL - Works upto a few tries and stops<br>
@@ -31,4 +31,4 @@ Copy required(*) files to /var/www. Copy hosts to /etc/ using sudo.
 * passgenerate.php *<br>
 	Generates password and updates in MySQLdb<br>
 * submit.php *<br>
-PHP file executed upon POST<br>>
+PHP file executed upon POST<br>
