@@ -8,27 +8,27 @@ Task 2
 ------
 Copy required(*) files to /var/www. Copy hosts to /etc/ using sudo. 
 
-apache2.conf
-	Apache configuration file
-*config.php
-	Config file for connecting to database
-cron
-	crontab to execute as per requirement
-hacka.php
-	An attempt to brute-force using PHP cURL - Works upto a few tries and stops
-hacka.py
+ * apache2.conf*<br>
+   Apache configuration file  <br>
+* config.php<br>
+	Config file for connecting to database<br>
+* cron<br>
+	crontab to execute as per requirement<br>
+* hacka.php<br>
+	An attempt to brute-force using PHP cURL - Works upto a few tries and stops<br>
+* hacka.py<br>
 	An attempt using Mechanize in python2 - Doesn't work
-hacka
-	Bash cURL - SUCCESS! :D 
-*hacker.jpg
-	Image to be added to sql database
-hosts
-	hosts file for site to be hosted under delta.com
-*main.html
-	Login file
-*pac.png
-	Picture displayed
-*passgenerate.php
-	Generates password and updates in MySQLdb
-*submit.php
-	PHP file executed upon POST
+* hacka * <br>
+	** Bash cURL - SUCCESS! :D ** <br>
+* hacker.jpg * <br>
+	Image to be added to sql database<br>
+* hosts * <br>
+	hosts file for site to be hosted under delta.com<br>
+* main.html * <br>
+	 Login file<br>
+* pac.png * <br>
+	Picture displayed<br>
+* passgenerate.php *<br>
+	Generates password and updates in MySQLdb<br>
+* submit.php *<br>
+PHP file executed upon POST<br>>
