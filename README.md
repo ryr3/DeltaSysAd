@@ -19,7 +19,7 @@ Copy required(*) files to /var/www. Copy hosts to /etc/ using sudo.
 * hacka.py<br>
 	An attempt using Mechanize in python2 - Doesn't work
 * hacka * <br>
-	** Bash cURL - SUCCESS! :D ** <br>
+	 <b>Bash cURL - SUCCESS! :D </b> <br>
 * hacker.jpg * <br>
 	Image to be added to sql database<br>
 * hosts * <br>
