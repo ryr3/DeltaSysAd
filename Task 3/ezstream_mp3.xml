@@ -24,10 +24,10 @@
       information matches up with your input stream files. Note that
       <svrinfoquality /> only applies to Ogg Vorbis streams.
      -->
-    <svrinfoname>My Stream</svrinfoname>
-    <svrinfourl>http://www.oddsock.org</svrinfourl>
-    <svrinfogenre>RockNRoll</svrinfogenre>
-    <svrinfodescription>This is a stream description</svrinfodescription>
+    <svrinfoname>Stream</svrinfoname>
+    <svrinfourl>http://www.ryr3.github.io</svrinfourl>
+    <svrinfogenre>Rock</svrinfogenre>
+    <svrinfodescription>This is a stream description describing the stream</svrinfodescription>
     <svrinfobitrate>128</svrinfobitrate>
     <svrinfochannels>2</svrinfochannels>
     <svrinfosamplerate>44100</svrinfosamplerate>
